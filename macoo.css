@@ -1,0 +1,91 @@
+h1{font-family:italic;
+    text-align: center;
+    color:rgb(250, 252, 132);
+    font-size: 300%;
+    background-color: rgb(79, 0, 0);
+    color: transparent;
+    -webkit-text-stroke: 1px #fff;
+    font-size: 120px;
+    background-image: linear-gradient(rgb(255, 0, 0), rgba(0, 0, 0, 0.719));
+    background-repeat: no-repeat;
+    -webkit-animation-direction: text;
+    background-position: 100px 0;
+    transition: background-position 1s, text-shadow 1s;
+    transition-delay: 0.6s, 0s;
+}
+h1:hover {
+    transition: background-position 1s, text-shadow 1s;
+    transition-delay: 0s, 1s;
+    background-position: 0 0;
+    text-shadow: 0 0 10px rgb(0, 238, 255), 0 0 20px rgb(163, 249, 255), 0 0 40px rgb(0, 162, 255), 0 0 80px #0ef, 0 0 160px #0ef;
+}
+    h2{background: #000000;
+    font-size: medium;
+    color: rgb(255, 255, 255);
+    font-size: 200%;
+    text-align: center;}
+    
+    p{color: aliceblue;
+    font-family: Georgia, Times, 'Times New Roman', serif;
+    font-size: 150%;}
+    
+    h3{color: aliceblue;
+    font-size: 170%;
+    text-align: center;}
+    
+    h4{color: aliceblue;
+    font-size: 100%;
+    text-align: center;}
+    
+    h5{color: aliceblue;
+    font-size: 126%;
+    background-color:rgb(255, 0, 0);
+    text-align: center;}
+    input{color: rgba(157, 0, 16, 0.546);}
+    
+    h6{color: aliceblue;
+    font-size: 150%;}
+    
+    div{color: aliceblue;}
+    marquee{color: aliceblue;}
+    p{text-align: center;}
+    
+    ul{
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        padding: 16px;
+    }
+    
+    body{
+        display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: #000;
+  background-color: #000000;
+        }
+   
+   
+    header img{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    border: 5px solid rgb(85, 255, 85);
+    }
+    
+    .center{
+    text-align: center;
+    }
+     .div img{
+    width: 70%;
+    height: 30%;
+    border-radius: 30%;
+     }
+     @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap");
+* {
+    margin: 15px;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
