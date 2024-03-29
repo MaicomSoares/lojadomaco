@@ -1,0 +1,97 @@
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 50px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    background-color: #00eaff; /* Cor de fundo do corpo */
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.fade-in {
+    opacity: 0;
+    animation: fadeInAnimation 2s ease-in forwards; /* Ajuste a duração conforme desejado */
+}
+
+@keyframes fadeInAnimation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.animated-button {
+    background-color: #15921a; /* Cor de fundo do botão */
+    color: white; /* Cor do texto do botão */
+    border: none;
+    padding: 15px 30px; /* Tamanho do botão */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 4px 2px;
+    transition-duration: 0.4s;
+    cursor: pointer;
+}
+
+.animated-button:hover {
+    background-color: #0011ff; /* Cor de fundo do botão ao passar o mouse */
+}
+
+.animated-button:active {
+    background-color: #00fff2; /* Cor de fundo do botão quando clicado */
+    transform: translateY(2px); /* Efeito de levantar um pouco quando clicado */
+    transition-duration: 0s; /* Remover a transição para um efeito instantâneo ao pressionar */
+}
+
+.bubbles {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    pointer-events: none;
+}
+
+@keyframes bubbleAnimation {
+    0% {
+        transform: translateY(0);
+    }
+    100% {
+        transform: translateY(-150vh);
+    }
+}
+
+.bubble {
+    position: absolute;
+    background-color: rgba(255, 39, 39, 0.5); /* Cor das bolhas */
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    animation: bubbleAnimation 10s linear infinite; /* Ajuste a duração conforme desejado */
+}
+
+/* Cada bolha com tamanho e posição aleatórios */
+.bubble:nth-child(1) {
+    left: 5%;
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(2) {
+    left: 15%;
+    animation-delay: 4s;
+}
+
+.bubble:nth-child(3) {
+    left: 25%;
+    animation-delay: 6s;
+}
